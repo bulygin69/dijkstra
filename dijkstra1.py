@@ -13,7 +13,7 @@ G = {
 
 print('\n  Граф G')
 for i in G:
-    print('', i, ':', G[i])
+    print(i, ':', G[i])
 
 N = len(G) #количество элементов в словаре (G)
 
@@ -43,6 +43,7 @@ def dijkstra3(v, p, t):
     print('t =', t) 
     
     if N <= len(t):
+        print('\nВсё!\nВершины и их метки =', p)
         return           
     
     print('\n  Находим вершину с минимальной меткой')
@@ -93,7 +94,7 @@ start_v(3)
 ##### 
    
 dijkstra3(v, p, t)
-print('\nВершины и их метки =', p)
+
 
 
 
